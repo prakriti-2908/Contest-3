@@ -1,0 +1,134 @@
+.c-item {
+    height: 480px;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+  }
+  
+  .flex-card{
+    width: 15%;
+    text-align: justify;
+  }
+
+  .grid-up{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.left{
+    grid-row: 1/3;
+}
+.mid1-up{
+    grid-row: 1/2;
+}
+.mid2-up{
+    grid-row: 1/2;
+}
+.right-up{
+    /* grid-row: ; */
+    grid-column: 4/5;
+}
+
+.grid-down{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    overflow: hidden;
+}
+
+
+  .card{
+    filter: drop-shadow(rgb(129, 123, 123) 1rem 1rem 10px);
+  }
+
+  
+
+  .footer-button{
+    position: relative;
+    left: 75em;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+
+
+
+
+
+
+
+  /* for phone view */
+
+  @media screen and (max-width: 600px){
+    
+    .crd{
+        width: 50%!important;
+        height: 50% !important;
+        font-size: 12px;
+    }
+    .hover{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .card-container{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 8px;
+    }
+    .flex-card{
+        width: 70%;
+        border: 1px solid black;
+        padding: 25px;
+        font-size: small;
+        text-align: center;
+    }
+
+    
+    .foot{
+        margin-left: 30%;
+        border: 1px solid black;
+        padding: 0%;
+        width: 40%;
+        text-align: center;
+        /* margin-left: 0; */
+    }
+    .footer-button{
+        left: 156px;
+    }
+    .copyright{
+        text-align: center;
+        margin-left: 0% !important;
+    }
+    
+    .grid-down .grid-up{
+        /* height: 200px !important; */
+        /* display: none; */
+        height: 500px !important;
+    }
+    .photo-gallery{
+        /* display: none; */
+
+    }
+  }
